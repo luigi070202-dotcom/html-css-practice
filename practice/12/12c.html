@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox Practice 3</title>
+        <style>
+
+            .profile-container{
+                display: flex;
+                width: 400px;
+                border: 1px solid gray;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .profile{
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+
+            .profile-image{
+                background-color: lightblue;
+                width: 25%;
+                justify-content: center; /* centers horizontally */
+                align-items: center;
+                display: flex;
+            }
+
+            .profile-info{
+                width: 100%;
+                height: 100%;
+                background-color: lightpink;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .profile-actions{
+                display: flex;
+                background-color: lightblue;
+                width: 25%;
+                justify-content: center; /* centers horizontally */
+                align-items: center;     
+            }
+
+            img {
+                height: 75px;
+                width: 75px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .profile-name{
+                font-weight: bold;
+                font-size: 16px;
+                margin: 8px 10px;
+            }
+
+            .profile-title,
+            .profile-status{
+                font-size: 14px;
+                color: gray;
+                margin: 8px 10px;
+            }
+
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                margin: 0;
+            }
+
+            .header{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                height: 30px;
+                background-color: rgb(83, 17, 116);
+                margin-bottom: 20px;
+                align-items: center;
+            }
+
+            .home-container{
+                width: 100px;
+                padding: 5px 5px;
+            }
+
+            .search-bar-container{
+                flex: 1;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 5px 5px;
+            }
+
+            .download-button-container{
+                width: 100px;
+                padding: 5px 5px;
+                text-align: right;
+            }
+
+            .search-bar{
+                width: 400px;
+                max-width: 400px;
+                border-radius: 40px;
+                border: none;
+                padding: 2px 5px;
+            }
+
+            .home-title{
+                color: white;
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            .download-button{
+                border-color: white;
+                border-width: 1px;
+                border: solid;
+                color: white;
+                background-color: rgb(83, 17, 116);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="home-container">
+                <p class="home-title">Home</p>
+            </div>
+            <div class="search-bar-container">
+                <input class="search-bar" type="text" placeholder="Search">
+            </div>
+            <div class="download-button-container">
+                <button class="download-button">Download</button>
+            </div>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile">
+                <div class="profile-image">
+                    <img class="profile-img" src="../assets/senku.avif" alt="Senku">
+                </div>
+                <div class="profile-info">
+                            <p class="profile-name">Senku</p>
+                            <p class="profile-title">The Scientist</p>
+                            <p class="profile-status">Popular</p>
+                </div>                
+                <div class="profile-actions">
+                    <button class="follow-button">Follow</button>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profile-image">
+                    <img class="profile-img" src="../assets/senku.avif" alt="Senku">
+                </div>
+                <div class="profile-info">
+                            <p class="profile-name">Senku</p>
+                            <p class="profile-title">The Scientist</p>
+                            <p class="profile-status">Popular</p>
+                </div>                
+                <div class="profile-actions">
+                    <button class="follow-button">Follow</button>
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profile-image">
+                    <img class="profile-img" src="../assets/senku.avif" alt="Senku">
+                </div>
+                <div class="profile-info">
+                            <p class="profile-name">Senku</p>
+                            <p class="profile-title">The Scientist</p>
+                            <p class="profile-status">Popular</p>
+                </div>                
+                <div class="profile-actions">
+                    <button class="follow-button">Follow</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

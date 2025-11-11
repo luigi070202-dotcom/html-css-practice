@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                font-family: arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            img{
+                width: 200px;;
+            }
+
+            .friend-suggestion-grid{
+                border: 1px solid black;
+                display: grid;
+                grid-template-columns: 120px 120px;
+            }
+
+            .friend-profile{
+                border: 1px rgba(101, 101, 101, 0.427);
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+            }
+
+            .profile-pic-div{
+                display: block;
+                height: 120px;
+                width: 120px;
+                margin: 0 auto;
+                
+            }
+
+            .profile-pic{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .mutual-pic-div{
+                display: grid;
+                grid-template-columns: 20px 1fr;
+            }
+
+            .mutual-pic{
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .mutual-count{
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .mutual-count-text{
+                font-size: 12px;
+                color: rgb(78, 78, 78);
+            }
+
+            .profile-actions{
+                margin-bottom: 10px;
+                margin-left: 5px;
+                text-align: left;
+            }
+
+            .add-friend-button{
+                background-color: rgb(16, 108, 247);
+                color: white;
+                border: none;
+                border-radius: 2px;
+                font-family: arial;
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+
+            .profile-name{
+                font-size: 16px;
+                font-weight: bold;
+                text-align: left;
+                margin-top: 8px;
+                margin-left: 5px;
+                margin-bottom: 8px;
+                margin-right: 5px;
+            }
+            
+            .profile-info{
+                margin-bottom: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="friend-suggestion-grid">
+            <div class="friend-profile">
+                <div class="profile-pic-div">
+                    <img class="profile-pic" src="../assets/senku.avif" alt="Senku">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name-div">
+                        <p class="profile-name">Senku</p>
+                    </div>
+                    <div class="mutual-pic-div">
+                        <img class="mutual-pic" src="../assets/gen.webp" alt="Gen">
+                    </div>
+                    <div class="mutual-count">
+                        <p class="mutual-count-text">2 mutual friends</p>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="add-friend-button">Add Friend</button>
+                </div>
+            </div>
+
+            <div class="friend-profile">
+                <div class="profile-pic-div">
+                    <img class="profile-pic" src="../assets/ryusui.jpg" alt="Ryusui">
+                </div>
+                <div class="profile-info">
+                    <div class="profile-name-div">
+                        <p class="profile-name">Ryusui</p>
+                    </div>
+                    <div class="mutual-pic-div">
+                        <img class="mutual-pic" src="../assets/gen.webp" alt="Gen">
+                    </div>
+                    <div class="mutual-count">
+                        <p class="mutual-count-text">2 mutual friends</p>
+                    </div>
+                </div>
+                <div class="profile-actions">
+                    <button class="add-friend-button">Add Friend</button>
+                </div>
+        </div>
+    </body>
+</html>

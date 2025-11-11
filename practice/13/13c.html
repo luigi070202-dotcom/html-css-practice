@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Twitter</title>
+    <style>
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .dp{
+            height: 45px;
+            width: 45px;
+            object-fit: cover;
+            border-radius: 22.5px;
+        }
+
+        .link-pic{
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+            object-position: right;
+        }
+
+        .box{
+            border: 1px solid gray;
+            padding: 5px 5px;
+        }
+
+        .container{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .dp-container{
+            width: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tweet-container{
+            flex: 1;
+        }
+
+        .username-container{
+            display: flex;
+            margin-bottom: 5px;
+        }
+        
+        .name{
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        .username{
+            color: gray;
+        }
+
+        .post{
+            margin-bottom: 5px;
+        }
+
+        .link-container{
+            display: flex;
+            border-radius: 10px;
+            border: solid gray;
+            overflow: hidden;
+        }
+        
+        .link-content-container{
+            flex: 1;
+        }
+
+        .link-preview-container{
+            display: flex;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        
+        .hyperlink-container{
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .hyperlink{
+            color: gray;
+        }
+        
+        .video-title{
+            max-width: fit-content;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="dp-container">
+                <img class="dp" src="../assets/senku.avif" alt="Senku">
+            </div>
+            <div class="tweet-container">
+                <div class="username-container">
+                    <p class="name">Senku.Ishigami</p>
+                    <p class="username">@SenkuIshigami</p>
+                </div>
+                <div class="post-containter">
+                    <p class="post">This is Exhilarating! Roadmap Video is Up!</p>
+                </div>
+                <div class="link-container">
+                    <div class="link-preview-container">
+                        <img class="link-pic" src="../thumbnails/thumbnail1.jpg" alt="Pic">
+                    </div>
+                    <div class="link-content-container">
+                        <div class="hyperlink-container">
+                            <p class="hyperlink">youtube.com</p>
+                        </div>
+                        <div class="video-title-container">
+                            <p class="video-title">Roadmap to Creating the Medicine! (3294)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="dp-container">
+                <img class="dp" src="../assets/senku.avif" alt="Senku">
+            </div>
+            <div class="tweet-container">
+                <div class="username-container">
+                    <p class="name">Senku.Ishigami</p>
+                    <p class="username">@SenkuIshigami</p>
+                </div>
+                <div class="post-containter">
+                    <p class="post">This is Exhilarating! Roadmap Video is Up!</p>
+                </div>
+                <div class="link-container">
+                    <div class="link-preview-container">
+                        <img class="link-pic" src="../thumbnails/thumbnail1.jpg" alt="Pic">
+                    </div>
+                    <div class="link-content-container">
+                        <div class="hyperlink-container">
+                            <p class="hyperlink">youtube.com</p>
+                        </div>
+                        <div class="video-title-container">
+                            <p class="video-title">Roadmap to Creating the Medicine! (3294)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

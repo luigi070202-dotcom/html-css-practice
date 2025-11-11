@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cloth</title>
+        <style>
+            .cloth-container{
+                position: relative;
+                display: inline-block;
+                border: gray 1px solid;
+                padding: 20px 20px;
+                background-color: gray;
+            }
+
+            .discount{
+                background-color: black;
+                color: white;
+                position: absolute;
+                right: 0px;
+                top: 5px;
+            }
+
+            .button-container{
+                position: absolute;
+                background-color: rgba(128, 128, 128, 0.701);
+                height: 30%;
+                width: 100%;
+                bottom: 0%;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cloth-container">
+            <img src="../cloth.jpg" alt="">
+            <p class="discount">20% Off</p>
+            <div class="button-container">
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+.sidebar-flex{
+    display: flex;
+    position: fixed;
+    top: 60px;
+    bottom: 0px;
+    left: 0px;
+    width: 250px;
+    background-color: gray;
+    
+}
+
+.profile-sidebar{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(48, 48, 54);
+    align-items: center;
+}
+
+.profile-pic{
+    margin: 5px 10px;
+}
+
+.channels-sidebar{
+    flex: 1;
+    background-color: rgb(57, 56, 59);
+    display: flex;
+    padding-top: 20px;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.channel-label{
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.info{
+    margin-right: 50%;
+    color: white;
+    font-weight: bold;
+}
+
+.plus{
+    font-size: arial;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    color: rgb(155, 155, 155);
+    background-color: rgb(57, 56, 59);
+}
+
+.plus:hover{
+    background-color: rgb(88, 86, 92);
+}
+
+.channels{
+    margin-right: auto;
+    margin-left: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.channels-name{
+    color: rgb(155, 155, 155);
+    margin-bottom: 8px;
+    margin-left: 0px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox Practice</title>
+        <style>
+            .box{
+                border: 1px solid gray;
+                padding: 5px 5px;
+            }
+
+            p{
+                margin: 0;
+            }
+
+            .emailer-pic{
+                height: 50px;
+                width: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            .mail{
+                display: flex;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            
+            .email-container{
+                flex: 1;
+            }
+        
+            .email-title-time-container{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 3px;
+            }
+
+            .email-subject-container{
+                margin-bottom: 2px;
+            }
+
+            p{
+                font-family: arial;
+            }
+
+            .title-text{
+                font-weight: bolder;
+                font-size: 20px;
+            }
+
+            .time-text
+            {
+                color: gray;
+            }
+
+            .subject-text{
+                font-weight: bold;
+                font-size: 16px;
+            }
+
+            .email-content-text{
+                font-size: 12px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="all-inboxes"> All inboxes</div>
+            <div class="mail">
+                <div class="emailer-pic-container">
+                    <img class="emailer-pic" src="../assets/senku.avif" alt="Senku">
+                </div>
+                <div class="email-container">
+                    <div class="email-title-time-container">
+                        <div class="title">
+                            <p class="title-text">I am Senku</p>
+                        </div>
+                        <div class="time-text"class="time">
+                            <p>10:16 AM</p>
+                        </div>
+                    </div>
+                    <div class="email-subject-container">
+                        <p class="subject-text">Hey Big Oaf</p>
+                    </div>
+                    <div class="email-content-container">
+                        <p class="email-content-text">This is Senku, messaging you big oaf. I'm good now here at Ishigami Vi....</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mail">
+                <div class="emailer-pic-container">
+                    <img class="emailer-pic" src="../assets/senku.avif" alt="Senku">
+                </div>
+                <div class="email-container">
+                    <div class="email-title-time-container">
+                        <div class="title">
+                            <p class="title-text">I am Senku</p>
+                        </div>
+                        <div class="time-text"class="time">
+                            <p>10:16 PM</p>
+                        </div>
+                    </div>
+                    <div class="email-subject-container">
+                        <p class="subject-text">Hey Big Oaf</p>
+                    </div>
+                    <div class="email-content-container">
+                        <p class="email-content-text">This is Senku, messaging you big oaf. I'm good now here at Ishigami Vi....</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

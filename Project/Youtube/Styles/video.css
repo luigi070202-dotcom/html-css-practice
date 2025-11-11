@@ -1,6 +1,7 @@
 .all-videos-container {
-  display: flex;
-  grid-template-columns: 270px 270px 270px;
+  display: grid;
+  /* 👇 Automatically fit as many columns as possible */
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   column-gap: 20px;
   row-gap: 40px;
   padding: 20px;

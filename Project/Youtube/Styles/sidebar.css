@@ -1,0 +1,11 @@
+.sidebar {
+  position: fixed;
+  flex-direction: column;
+  top: 57px;
+  left: 0;
+  bottom: 0;
+}
+
+.sidebar-link img {
+  height: 24px;
+}

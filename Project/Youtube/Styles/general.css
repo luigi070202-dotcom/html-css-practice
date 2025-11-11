@@ -1,7 +1,9 @@
 body {
-    font-family: Roboto, Arial;
+  font-family: Roboto, Arial;
+  padding-top: 75px;
+  padding-left: 75px;
 }
 
-p{
-    margin: 0px;
+p {
+  margin: 0px;
 }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../Youtube/Styles/video.css" />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img
           class="hamburger-menu"
@@ -33,16 +33,40 @@
         <input class="search-bar" type="text" placeholder="Search" />
         <button class="search-icon">
           <img src="../Youtube/Icons/Header Icons/search.svg" alt="" />
+          <div class="tooltip">Search</div>
         </button>
         <button class="voice-search-icon">
           <img
             src="../Youtube/Icons/Header Icons/voice-search-icon.svg"
             alt=""
           />
+          <div class="tooltip">Search with your voice</div>
         </button>
       </div>
-      <div class="right-section"></div>
-    </div>
+      <div class="right-section">
+        <div class="tooltip-container">
+          <img src="Icons/Header Icons/upload.svg" alt="Upload Icon" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="tooltip-container">
+          <img src="Icons/Header Icons/youtube-apps.svg" alt="YouTube Apps" />
+          <div class="tooltip">Youtube Apps</div>
+        </div>
+        <div class="tooltip-container">
+          <img
+            src="Icons/Header Icons/notifications.svg"
+            alt="Notification Icon"
+          />
+          <div class="notification-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img
+          class="my-channel"
+          src="Channels/my-channel.jpeg"
+          alt="my-channel"
+        />
+      </div>
+    </header>
 
     <div class="all-videos-container">
       <div class="video-container">

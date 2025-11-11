@@ -118,6 +118,7 @@
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
+  margin-right: 20px;
 }
 .right-section .my-channel {
   height: 32px;
